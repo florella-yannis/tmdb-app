@@ -1,18 +1,20 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 
-const Navigation = () => {
+const Header = () => {
     return (
-        <div>
-            <div className="navigation">
+        <header>
+            <nav>
+                <span>TMDB APP</span>
                 <ul>
                     <li><NavLink to="/" >Acceuil</NavLink></li>
                     <li><NavLink to="/about" >Coup de coeur</NavLink></li>
                     
                 </ul>
-            </div>
-        </div>
+            </nav>
+            <h1>Vos séries à portée de clic</h1>
+        </header>
     );
 };
 
-export default Navigation;
+export default Header;
