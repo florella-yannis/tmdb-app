@@ -9,7 +9,7 @@ body{
 span, h2, h3, h4{
   font-family: 'Oswald', sans-serif;
 }
-p, a{
+p, a, h1{
   font-family: 'Noto Sans KR', sans-serif;
 }
 li {

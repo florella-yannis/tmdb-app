@@ -99,7 +99,6 @@ const Card = ({ movie }) => {
                     movie.genre_ids ? genreFinder() : null
                 }
             </ul>
-            
             {movie.overview ? <h4>Synopsis</h4> : ""}
             <p className="overflow">{movie.overview}</p>
             <div className="btn"> ❤️ </div>

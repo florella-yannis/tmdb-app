@@ -20,6 +20,9 @@ nav ul li {
 nav ul li a{
     color: white;
 }
+nav ul li a:hover {
+    color: rgb(191, 191, 216);
+}
 
 header h1{
     background-image: url(../../img/bandeau.png);
