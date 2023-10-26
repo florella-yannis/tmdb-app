@@ -74,6 +74,16 @@ const Card = ({ movie }) => {
     return genreArray.slice(0,3).map((genre) => <li key={genre}> {genre}</li>);
     };
 
+    const addStorage = () => {
+        let storedData = window.localStorage.movies ? window.localStorage.movies.split(",") : [];
+
+        if (!storedData.includes(movie.id.toString())) {
+            storedData.push(movie.id);
+            window.localStorage.movies = storedData;
+        }
+
+    }
+
 
     return (
         <li className="card-container">
@@ -101,7 +111,7 @@ const Card = ({ movie }) => {
             </ul>
             {movie.overview ? <h4>Synopsis</h4> : ""}
             <p className="overflow">{movie.overview}</p>
-            <div className="btn"> ❤️ </div>
+            <div className="btn" onClick={() => addStorage()}> ❤️ </div>
         </li>
     );
 };
