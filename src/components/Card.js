@@ -81,7 +81,6 @@ const Card = ({ movie }) => {
             storedData.push(movie.id);
             window.localStorage.movies = storedData;
         }
-
     }
 
 
