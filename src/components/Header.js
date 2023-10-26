@@ -5,14 +5,14 @@ const Header = () => {
     return (
         <header>
             <nav>
-                <span>TMDB APP</span>
+                <span>TMDB APP 🎬</span>
                 <ul>
                     <li><NavLink to="/" >Acceuil</NavLink></li>
                     <li><NavLink to="/about" >Coup de coeur</NavLink></li>
                     
                 </ul>
             </nav>
-            <h1>Vos séries à portée de clic</h1>
+            <h1>Vos films à portée de clic</h1>
         </header>
     );
 };
