@@ -5,12 +5,12 @@ const Card = ({movie}) => {
 
     const apiKey = process.env.REACT_APP_API_KEY;
     const genre = movie.genre_ids;
-    // const urlGenres = "https://api.themoviedb.org/3/genre/movie/list?api_key="+ apiKey +"&query=code&language=fr-FR";
+    const [category, setCategory] = useState([]);
     
-    // useEffect(() => {
-    //     axios.get("https://api.themoviedb.org/3/genre/movie/list?api_key=556167519438243d15a95d5e51471224&query=code&language=fr-FR")
-    //     .then((res) => console.log(res));
-    // }, []);
+    useEffect(() => {
+        axios.get("https://api.themoviedb.org/3/genre/movie/list?api_key=" + apiKey + "&query=code&language=fr-FR")
+        .then((res) => setCategory(res.data.genres));
+    }, []);
 
 
     return (

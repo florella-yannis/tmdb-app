@@ -30,4 +30,6 @@ header h1{
     align-items: center;
     justify-content: center;
     color: white;
+    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif;
 }

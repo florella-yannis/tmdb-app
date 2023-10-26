@@ -2,4 +2,5 @@
 @import url(font.css);
 @import url(./components/card.css);
 @import url(./components/header.css);
+@import url(./components/form.css);
 @import url(./pages/home.css);

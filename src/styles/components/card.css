@@ -26,3 +26,12 @@
     margin-top: 15px;
 }
 
+.genre{
+    display: flex;
+}
+.genre p {
+    border: 1px solid black;
+    padding: 5px 12px;
+    margin: 6px;
+    border-radius: 15px;
+}
