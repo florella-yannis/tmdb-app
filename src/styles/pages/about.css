@@ -5,11 +5,11 @@
     font-weight: 400;
 }
 .list-page h2{
-    margin-top: 100px;
+    margin-top: 10px;
 }
 .result{
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: space-evenly;
 }
 
