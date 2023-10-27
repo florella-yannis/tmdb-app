@@ -71,7 +71,7 @@ const Card = ({ movie }) => {
                     break;
             }
         }
-    return genreArray.slice(0,3).map((genre) => <li key={genre}> {genre}</li>);
+        return genreArray.slice(0, 3).map((genre) => <li key={genre}> {genre}</li>);
     };
 
     const addStorage = () => {
@@ -83,9 +83,15 @@ const Card = ({ movie }) => {
         }
     }
 
+    const deleteStorage = () => {
+        let storedData = window.localStorage.movies.split(",");
+        let newData = storedData.filter((id) => id != movie.id);
+        window.localStorage.movies = newData;
+    }
+
 
     return (
-        <li className="card-container">
+        <div className="card-container">
             <div className="poster">
                 <img
                     src={
@@ -97,21 +103,29 @@ const Card = ({ movie }) => {
                 />
             </div>
             <h2>{movie.title}</h2>
-            {movie.release_date ? (
-                <h3>Sortie le : {dateFormater(movie.release_date)} </h3>
+            {movie.release_date ? ((
+                <h3>Sortie le : {dateFormater(movie.release_date)} </h3>)
             ) : null}
             <p>
                 {movie.vote_average.toFixed(1)}/10 <span>⭐</span>
             </p>
             <ul className="genre">
                 {
-                    movie.genre_ids ? genreFinder() : null
+                    movie.genre_ids ? genreFinder() : movie.genres.map((genre) => (
+                        <li key={genre}>{genre.name}</li>
+                    ))
                 }
             </ul>
             {movie.overview ? <h4>Synopsis</h4> : ""}
             <p className="overflow">{movie.overview}</p>
-            <div className="btn" onClick={() => addStorage()}> ❤️ </div>
-        </li>
+
+            {movie.genre_ids ? (
+                <div className="btn" onClick={() => addStorage()}> ❤️ </div>) :
+                (<div className="btn" onClick={() =>{ 
+                    deleteStorage();
+                window.location.reload()}}> ❌</div>)
+            }
+        </div>
     );
 };
 

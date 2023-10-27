@@ -4,13 +4,19 @@
   box-sizing: border-box;
 }
 body{
-  background-color: #f3f4f6;
+  background-color: #121113;
+  color: white;
 }
-span, h2, h3, h4{
+h2, h4{
   font-family: 'Oswald', sans-serif;
+  color: #B4B4B4;
 }
-p, a, h1{
+h4{
+  margin-bottom: 2px;
+}
+p, a, h1,li, h3, span{
   font-family: 'Noto Sans KR', sans-serif;
+  color: #EEEEEE;
 }
 li {
   list-style: none;
@@ -24,3 +30,24 @@ span{
   font-weight: 500;
   font-size: 1.3rem;
 }
+
+/* ===== Scrollbar CSS ===== */
+  /* Firefox */
+  * {
+    scrollbar-width: auto;
+    scrollbar-color: #484848 #7B7B7B;
+  }
+
+  /* Chrome, Edge, and Safari */
+  *::-webkit-scrollbar {
+    width: 10px;
+  }
+
+  *::-webkit-scrollbar-track {
+    background: #7B7B7B;
+  }
+
+  *::-webkit-scrollbar-thumb {
+    background-color: #484848;
+    border-radius: 10px;
+  }

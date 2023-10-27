@@ -1,4 +1,11 @@
+.list-page > h1{
+    text-align: center;
+    margin: 20px 0;
+    font-size: 1.5rem;
+    font-weight: 400;
+}
 .result{
     display: flex;
-    
+    flex-wrap: wrap;
+    justify-content: space-around;
 }
