@@ -5,6 +5,6 @@ Bienvenue dans mon projet React qui utilise l'API The Movie Database (TMDB) pour
 ## Demo
 
 
-le lien [http://localhost:3000](http://localhost:3000) pour voir le projet.
+le lien [https://yannis-dev-movie.netlify.app/](https://yannis-dev-movie.netlify.app/) pour voir le projet.
 
 
