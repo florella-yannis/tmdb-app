@@ -4,8 +4,12 @@
     font-size: 1.5rem;
     font-weight: 400;
 }
+.list-page h2{
+    margin-top: 100px;
+}
 .result{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
 }
+
