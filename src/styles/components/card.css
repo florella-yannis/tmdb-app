@@ -6,7 +6,7 @@
     box-shadow: #2A2A2A 0px 10px 15px -3px, #313131 0px 4px 6px -2px;
     border-radius: 5px;
     padding: 10px;
-    margin: 15px;
+    margin: 25px 5px;
     position: relative;
 }
 .card-container p{
@@ -56,6 +56,7 @@
 }
 .genre{
     display: flex;
+    flex-wrap: wrap;
 }
 .genre li {
     margin: 5px;
