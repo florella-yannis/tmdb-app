@@ -43,7 +43,7 @@ const Form = () => {
                             return b.vote_average - a.vote_average;
                         } else if (sortMoreLess === "less"){
                             return a.vote_average - b.vote_average;
-                        }return 0;
+                        }
                     })
                     .map((movie) => {
                         return <Card key={movie.id} movie={movie} />
