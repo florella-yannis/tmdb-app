@@ -7,7 +7,7 @@ const Header = () => {
             <nav>
                 <span>TMDB APP 🎬</span>
                 <ul>
-                    <li><NavLink to="/" >Acceuil</NavLink></li>
+                    <li><NavLink to="/" >Accueil</NavLink></li>
                     <li><NavLink to="/about" >Coup de coeur</NavLink></li>
                     
                 </ul>

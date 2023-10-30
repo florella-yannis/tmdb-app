@@ -123,7 +123,8 @@ const Card = ({ movie }) => {
                 <div className="btn" onClick={() => addStorage()}> ❤️ </div>) :
                 (<div className="btn" onClick={() =>{ 
                     deleteStorage();
-                window.location.reload()}}> ❌</div>)
+                window.location.reload();
+            }}> ❌</div>)
             }
         </div>
     );
