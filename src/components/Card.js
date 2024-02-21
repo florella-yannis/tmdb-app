@@ -111,7 +111,7 @@ const Card = ({ movie }) => {
             </p>
             <ul className="genre">
                 {
-                    movie.genre_ids ? genreFinder() : movie.genres.map((genre,index) => (
+                    movie.genre_ids ? genreFinder() : movie.genres.map((genre, index) => (
                         <li key={index}>{genre.name}</li>
                     ))
                 }
@@ -120,11 +120,12 @@ const Card = ({ movie }) => {
             <p className="overflow">{movie.overview}</p>
 
             {movie.genre_ids ? (
-                <div className="btn" onClick={() => addStorage()}> ❤️ </div>) :
-                (<div className="btn" onClick={() =>{ 
+                <div className="btn" onClick={() => addStorage()}> ❤️ </div>
+            ) : (
+                <div className="btn" onClick={() => {
                     deleteStorage();
-                window.location.reload();
-            }}> ❌</div>)
+                    window.location.reload();
+                }}> ❌</div>)
             }
         </div>
     );
